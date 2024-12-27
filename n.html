@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+      color: #fff;
+    }
+
+    /* Стиль для видео */
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Стиль для формы */
+    .registration-form {
+      background: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      position: relative;
+      margin: 100px auto;
+    }
+
+    .registration-form h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ff4b15;
+    }
+
+    .registration-form .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .registration-form label {
+      display: block;
+      margin-bottom: 5px;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    .registration-form input {
+      width: 100%;
+      padding: 10px;
+      background: #1e1e1e;
+      border: 1px solid #444;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .registration-form input:focus {
+      border-color: #ff1111;
+      outline: none;
+    }
+
+    .registration-form .submit-btn {
+      padding: 10px 20px;
+      background: linear-gradient(45deg, #16ff22, #f6fa0d);
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      width: 100%;
+    }
+
+    .registration-form .submit-btn:hover {
+      background: linear-gradient(45deg, #12ff1e, #10bd6c);
+    }
+
+    .registration-form p {
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+
+    .registration-form a {
+      color: #5dcf5d;
+      text-decoration: none;
+    }
+
+    .registration-form a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Видео как фон -->
+  <video class="background-video" autoplay muted loop>
+    <source src="01.mov" type="video/mp4">
+    Ваш браузер не поддерживает HTML5 видео.
+  </video>
+
+  <!-- Форма регистрации -->
+  <form class="registration-form" action="reg.php" method="post">
+    <h2>Регистрация</h2>
+    <div class="form-group">
+      <label for="username">Имя пользователя</label>
+      <input type="text" id="username" name="username" placeholder="Введите имя" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Электронная почта</label>
+      <input type="email" id="email" name="email" placeholder="Введите email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Пароль</label>
+      <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+    </div>
+    <button type="submit" class="submit-btn">Зарегистрироваться</button>
+    <p>Уже есть аккаунт? <a href="qq.html">Войти</a></p>
+    <p> <a href="zxc.html">В главную страницу</a></p>
+  </form>
+</body>
+</html>

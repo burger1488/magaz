@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; overflow: hidden; color: #fff; }
+    .background-video { position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; }
+    .login-form { background: rgba(0, 0, 0, 0.7); padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); width: 100%; max-width: 400px; text-align: center; position: relative; margin: 100px auto; }
+    .login-form h2 { font-size: 2rem; margin-bottom: 20px; color: #f87409; }
+    .login-form .form-group { margin-bottom: 15px; text-align: left; }
+    .login-form label { display: block; margin-bottom: 5px; color: #ccc; font-size: 0.9rem; }
+    .login-form input { width: 100%; padding: 10px; background: #1e1e1e; border: 1px solid #444; border-radius: 5px; color: #fff; font-size: 1rem; }
+    .login-form .submit-btn { padding: 10px 20px; background: linear-gradient(45deg, #34fd1a, #f8aa18); color: #fff; font-weight: bold; border: none; border-radius: 5px; cursor: pointer; width: 100%; }
+    .login-form p { margin-top: 20px; font-size: 0.9rem; }
+    .login-form a { color: #22f33e; text-decoration: none; }
+    .login-form a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <video class="background-video" autoplay muted loop>
+    <source src="01.mov" type="video/mp4"> Ваш браузер не поддерживает HTML5 видео.
+  </video>
+
+  <!-- Форма входа -->
+  <form class="login-form" action="login.php" method="POST">
+    <h2>Вход</h2>
+    <div class="form-group">
+      <label for="username">Имя пользователя</label>
+      <input type="text" id="username" name="username" placeholder="Введите имя" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Пароль</label>
+      <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+    </div>
+    <button type="submit" class="submit-btn">Войти</button>
+    <p>Нет аккаунта? <a href="n.html">Регистрация</a></p>
+  </form>
+</body>
+</html>
